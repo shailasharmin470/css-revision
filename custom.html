@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom property</title>
+    <style>
+        :root {
+            --main-color: pink;
+            --background-color: rgb(190, 171, 59);
+            --dark-border: 2px solid black;
+        }
+
+        h1 {
+            color: var(--main-color);
+        }
+
+        p {
+            color: yellow;
+        }
+
+        h6 {
+            background-color: var(--background-color);
+        }
+
+        h2 {
+            color: yellow;
+            border: 2px solid yellow;
+        }
+
+        footer {
+            color: yellow;
+            border: var(--dark-border);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>
+            I am exploring custom properties
+        </h1>
+        <p> Welcome to my website</p>
+
+    </header>
+    <main>
+        <h2>My awesome content</h2>
+        <h6>my tint heading</h6>
+    </main>
+    <footer>
+        <p><small>Copyright</small></p>
+    </footer>
+</body>
+
+</html>
